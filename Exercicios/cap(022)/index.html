@@ -3,10 +3,12 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Estudos de iframe</title>
+    <title>Estudos dos Iframes - 1</title>
     <style>
         iframe {
-            border: 1px solid black;
+            border: 4px groove rgb(133, 125, 125);
+            height: 400px;
+            width: 400px;
         }
     </style>
 </head>
@@ -14,13 +16,34 @@
     <h1>Testando o uso de um iframe</h1>
     <p>
         Acessando o site do
-        <iframe src="https://gustavoguanabara.github.io/"></iframe> 
+        <!-- Tamanho Padrão de um iframe: 300x150 -->
+        <!-- Scrolling modifica a disposição da barra de     rolagem dentro do iframe ao definir: auto, yes, no.
+
+            Auto: padrão, se o conteudo exceder o iframe, se criará um barra de rolagem.
+
+            Yes: mesmo que o conteudo caiba dentro do iframe a barra de rolagem irá aparecer.
+
+            No ( Não fuciona em todos os navegadores ): mesmo que o conteudo seja maior que o iframe
+            não será criado nenhuma barra de rolagem.
+
+        -->
+        <iframe src="https://gustavoguanabara.github.io/" height="200px" scrolling="auto">
+            <a href="https://gustavoguanabara.github.io/">Gustavo Guanabara</a>
+        </iframe> 
         para aprender a programar.
     </p>
     <p>
         O site do 
-        <iframe src="https://"></iframe>
-        tambem é muito legal.
+        <iframe src="https://www.cursoemvideo.com/" scolling="auto">
+            <a href="https://www.cursoemvideo.com/">Curso em video</a>
+        </iframe>
+        tambem é muito legal. 
+    </p>
+    <p>
+        Meu site tambem existe.
+        <iframe scolling="auto" src="../../../FlexBoxCssGrid/Desafios/Desaf(008)/index.html">
+            <p>Esse dispositivo bosta não roda nem iframe.</p>
+        </iframe>
     </p>
 </body>
 </html>
