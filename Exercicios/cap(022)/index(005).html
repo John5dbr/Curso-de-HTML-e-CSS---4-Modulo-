@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Estudos de Iframe - 5</title>
+    <style>
+        * {
+            margin: 0px;
+            padding: 0px;
+        }
+        body {
+            display: flex;
+            flex-flow: row; 
+        }
+        nav {
+            width: 20vw;
+            height: 96.9vh;
+            background: darkslategrey;
+            padding: 10px;
+        }
+        ul {
+            list-style: none;
+            height: 100%;
+            width: 100%;
+            text-align: center;
+            display: flex;
+            flex-flow: column;
+            align-items: center;
+            justify-content: space-evenly;
+        }
+        a {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            height: 30px;
+            width: 200px;
+            background: aquamarine;
+            color: black;
+            text-decoration: none;
+            border: 2px solid darkslategrey;
+        }
+        a:hover {
+            border-bottom: 2px solid black;
+        }
+        main {
+            width: 80vw;
+            background: darkorange;
+            height: 96.9vh;
+            padding: 10px;
+        }
+        iframe {
+            background: white;
+            border: 2px solid black;
+            height: 100%;
+            width: 100%;
+        }
+    </style>
+</head>
+<body>
+    <nav>
+        <ul>
+            <a href="PagExtra(index(005))/Azul.html" target="iframezin">
+                <li>Azul</li>
+            </a>
+            <a href="PagExtra(index(005))/Vermelho.html" target="iframezin">
+                <li>Vermelho</li>
+            </a>
+            <a href="PagExtra(index(005))/Amarelo.html" target="iframezin">
+                <li>Amarelo</li>
+            </a>
+            <a href="PagExtra(index(005))/Marrom.html" target="iframezin">
+                <li>Marrom</li>
+            </a>
+            <a href="PagExtra(index(005))/Cinza.html" target="iframezin">
+                <li>Cinza</li>
+            </a>
+        </ul>
+    </nav>
+    <main>
+        <iframe src="" name="iframezin" srcdoc="
+        <h1 style='text-align: center;'>Escolhe de uma vez alguma das opções imbecil mental</h1><p style='margin: 10px 50px; text-align: justify;'>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Doloremque, maxime! Aliquid placeat rem, quaerat eaque, amet, accusamus delectus aliquam nulla quidem vitae veniam laudantium? Laboriosam, dolorum. Aliquid quasi temporibus sunt commodi reiciendis enim provident est. Illo harum provident eveniet labore.</p>
+        ">
+            <p>[ ERRO: Dispositivo Incontapivel ]</p>
+        </iframe>
+    </main>
+</body>
+</html>
