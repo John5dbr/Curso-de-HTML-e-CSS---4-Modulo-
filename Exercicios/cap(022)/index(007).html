@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Estudos de Iframe - 7</title>
+    <style>
+
+    </style>
+</head>
+<body>
+    <h1>Meu site principal</h1>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Modi perspiciatis et distinctio deserunt assumenda impedit, eum sit fugit voluptatem debitis, iusto animi quasi iste nemo mollitia? Iste id dolore numquam.</p>
+    <!--
+        Parametro Sandbox e referrerpolicy
+        ira garantir uma segurança maior para as pessoas que usaram seus iframes.
+        
+        Sandbox="sandbox" 
+        Esse parametro com esse valor define que não será permitido coloca qualquer tipo de dado do usuario no iframe
+
+        Sandbox="Allow-same-origin"
+        Esse parametro com esse valor define que caso o site do Iframe tenha a mesma origem que o site onde ele ta, será permitido colocar dados nesse iframe.
+
+        Sandbox="Allow-forms Allow-scripts"
+        Esse parametro com esses valores define que será permitido colocar dados apenas em formularios, e como formularios esta ligado a scripts, é recomendado definir os dois valores juntos.
+
+        referrerpolicy="no-referrer"
+        Esse parametro com esse valor define que qualquer dado que for posto no iframe não será coletado pelo site onde o iframe esta.
+    -->
+    <iframe src="index(006).html" width="400px" sandbox="allow-forms allow-scripts allow-same-origin" referrerpolicy="no-refferer">
+        <p>[ ERRO: Dispositivo não compativel ]</p>
+    </iframe>
+    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Illo, quo quam sequi possimus facilis exercitationem ratione enim similique ullam temporibus id nisi aliquam cupiditate accusantium commodi quia cumque fugit voluptatibus ab ducimus repudiandae magnam? Nulla quod laudantium aperiam dolorum dolorem similique, perferendis officia ratione repellendus repellat fuga accusamus adipisci porro!</p>
+</body>
+</html>
