@@ -1,0 +1,48 @@
+@font-face {
+    font-family: 'roboto';
+    src: url('Roboto/Roboto-Black.ttf');
+}
+* {
+    margin: 0px;
+    padding: 0px; 
+}
+body {
+    background: url('pacote-d013/pacote-d013/imagens/fundo-madeira.jpg') center no-repeat fixed;
+    background-size: cover;
+}
+main {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-between;
+    height: 100vh;
+    width: 100vw;
+    background: url('pacote-d013/pacote-d013/imagens/frame-iphone.png') center no-repeat;
+    background-size: 275px;
+}
+iframe {
+    height: 415px;
+    width: 235px;
+    position: relative;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+nav {
+    display: flex;
+    flex-flow: column wrap;
+    justify-content: flex-start; 
+    align-items: center;
+    height: 100vh;
+    width: 75px;
+}
+img {
+    border-radius: 50%;
+    box-shadow: 1px 1px 5px rgba(27, 27, 27, 0.678);
+    margin: 5px 0px;
+    height: 60px;   
+    background: rgb(27, 137, 180)
+}
+a:hover img {
+    transform: scale(1.1);
+    transition-duration: 0.3s;
+}
