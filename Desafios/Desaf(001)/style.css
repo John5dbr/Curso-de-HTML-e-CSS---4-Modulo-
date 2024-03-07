@@ -20,6 +20,7 @@ main {
     background-size: 275px;
 }
 iframe {
+    border: 1px solid rgba(0, 0, 0, 0);
     height: 415px;
     width: 235px;
     position: relative;
@@ -27,7 +28,9 @@ iframe {
     left: 50%;
     transform: translate(-50%, -50%);
 }
-nav {
+nav { 
+    position: fixed;
+    right: 0px;
     display: flex;
     flex-flow: column wrap;
     justify-content: flex-start; 
@@ -38,11 +41,15 @@ nav {
 img {
     border-radius: 50%;
     box-shadow: 1px 1px 5px rgba(27, 27, 27, 0.678);
-    margin: 5px 0px;
+    margin: 15px 0px;
     height: 60px;   
-    background: rgb(27, 137, 180)
+}
+a {
+    height: 70px;
+    width: 60px;
 }
 a:hover img {
     transform: scale(1.1);
     transition-duration: 0.3s;
+    border: 1px solid rgb(255, 255, 255)
 }
