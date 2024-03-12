@@ -1,0 +1,60 @@
+@font-face {
+    font-family: 'roboto';
+    src: url('Roboto/Roboto-Black.ttf');
+}
+* {
+    margin: 0px;
+    padding: 0px; 
+}
+body {
+    background: url('imagens/pexels-engin-akyurt-15121231.jpg') center no-repeat fixed;
+    background-size: cover;
+}
+main {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-between;
+    height: 100vh;
+    width: 100vw;
+    background: url('imagens/Thin-frame-simple-frame-picture-painting-black-black-pictures-image_434428_wh860-removebg-preview.png') center no-repeat;
+    background-size: 600px;
+}
+iframe {
+    border: 1px solid rgba(0, 0, 0, 0);
+    height: 380px;
+    width: 377px;
+    position: relative;
+    top: 51%;
+    left: 50.3%;
+    transform: translate(-50%, -50%);
+    box-shadow: inset 0px 0px 10px rgba(0, 0, 0, 0.178);
+}
+nav { 
+    position: fixed;
+    right: 0px;
+    display: flex;
+    flex-flow: column wrap;
+    justify-content: flex-start; 
+    align-items: center;
+    height: 100vh;
+    width: 75px;
+    margin-right: 10px;
+}
+img {
+    border-radius: 50%;
+    box-shadow: 1px 1px 5px rgba(27, 27, 27, 0.678);
+    margin: 15px 0px;
+    height: 60px;   
+}
+a {
+    height: 70px;
+    width: 60px;
+}
+a:hover img {
+    transform: scale(1.1);
+    transition-duration: 0.3s;
+    border: 1px solid rgb(0, 0, 0)
+}
+@media (max-width: 800px) {
+
+}
