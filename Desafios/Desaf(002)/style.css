@@ -63,18 +63,47 @@ p {
     font-family: 'merda';
     color: white;
     font-size: 1.6em;
-    align-self: end;
-    justify-self: end;
+    position: absolute;
+    bottom: 0px;
+    left: 5px;
 }
 @media (max-width: 800px) {
+    main {
+        background-size: 400px 400px;
+    }
+    iframe {
+        height: 255px;
+        width: 255px;
+        top: 50.7%;
+        left: 50.2%;
+    }
     nav {
         flex-flow: row wrap;
         margin: 0px;
         width: 100%;
         justify-content: center;
-        align-items: start;
+        align-items: flex-end;
     }
     a {
-        margin-left: 15px;
+        text-align: center;
+        margin-bottom: 20px;
+    }
+    p {
+        position: absolute;
+        top: 0px;
+        left: 5px;
+    }
+    img {
+        height: 40px;
+        width: 40px;
+    }
+}
+@media (max-width: 400px) {
+    nav {
+        align-self: end;
+    }
+    img {
+        height: 40px;
+        width: 40px;
     }
 }
