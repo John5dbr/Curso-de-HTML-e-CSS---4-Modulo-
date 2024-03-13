@@ -90,13 +90,14 @@ p {
         color: white;
         text-decoration: none;
         text-align: center;
-        margin-bottom: 60px;
+        margin-bottom: 90px;
     }
     p {
         position: absolute;
         top: 0px;
-        left: 5px;
-        font-size: 1.3em;
+        left: 40%;
+        transform: translateX(-30%);
+        font-size: 1.4em;
     }
     img {
         height: 50px;
