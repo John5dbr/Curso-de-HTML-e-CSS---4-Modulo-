@@ -2,6 +2,10 @@
     font-family: 'roboto';
     src: url('Roboto/Roboto-Black.ttf');
 }
+@font-face {
+    font-family: 'merda';
+    src: url('Whisper/Whisper-Regular.ttf');
+}
 * {
     margin: 0px;
     padding: 0px; 
@@ -54,6 +58,13 @@ a:hover img {
     transform: scale(1.1);
     transition-duration: 0.3s;
     border: 1px solid rgb(0, 0, 0)
+}
+p {
+    font-family: 'merda';
+    color: white;
+    font-size: 1.6em;
+    align-self: end;
+    justify-self: end;
 }
 @media (max-width: 800px) {
     nav {
