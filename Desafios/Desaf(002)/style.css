@@ -71,11 +71,11 @@ p {
 }
 @media (max-width: 800px) {
     main {
-        background-size: 480px 480px;
+        background-size: 495px 495px;
     }
     iframe {
-        height: 302px;
-        width: 302px;
+        height: 311px;
+        width: 311px;
         top: 50.6%;
         left: 50.3%;
         box-shadow: 0px 0px 5px rgba(73, 73, 73, 0.616);
