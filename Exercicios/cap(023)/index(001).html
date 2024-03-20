@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Estudo de Formularios - 2</title>
+    <style>
+        * {
+            margin: 0px;
+            padding: 0px;
+        }
+        body {
+            margin: 20px 0px;
+        }
+        h1 {
+            text-align: center;
+            margin-bottom: 40px;
+        }
+        form {
+            display: flex;
+            flex-flow: row wrap;
+            height: 150px;
+            width: 300px;
+            justify-content: center;
+            margin: auto;
+        }
+        #usoa {
+            width: 75%;
+        }
+        #senh {
+            width: 75%;
+        }
+        #esse {
+            text-align: center;
+            width: 80%;
+        }
+        .botoes {
+            width: 40%;
+        }
+    </style>
+</head>
+<body>
+    <h1>Formulario comum</h1>
+    <form action="cadastro.php" method="post" autocomplete="on">
+        <p>
+            <label for="usoa">
+                Nome:
+                <input type="text" name="uso" id="usoa" required  maxlength="10" minlength="8"
+                size="25" placeholder="Maximo 10 letras" autocomplete="username">
+            </label>
+        </p>
+        <p>
+            <label for="senh">
+                Senha:
+                <input type="password" name="sen" id="senh" required maxlength="10" minlength="8" size="25" placeholder="Minimo 8 letras" autocomplete="current-password">
+            </label>
+        </p>
+        <p id="esse">
+            <input type="submit" value="Enviar" class="botoes"> 
+            <input type="reset" value="Resetar" class="botoes">
+        </p> 
+    </form>
+</body>
+</html>
