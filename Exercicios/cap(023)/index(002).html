@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Estudo de Formularios - 3</title>
+    <style>
+        body {
+
+        }
+        form {
+            display: flex;
+            flex-flow: column wrap;
+            justify-content: center;
+            position: absolute;
+            bottom: 50%;
+            transform: translateX(50%) translateY(50%);
+            height: 300px;
+            width: 300px;
+            text-align: center;
+            border: 1px solid black;
+        }
+        p {
+            display: flex;
+            justify-content: space-evenly;
+        }
+        .input {
+            width: 80px;
+            height: 30px;
+        }
+    </style>
+</head>
+<body>
+    <form action="cadastro.php" autocomplete="on" method="post">
+        <h1>Cadastro</h1>
+        <p>
+            <label for="idemail">
+                Email:
+                <input type="email" name="email" id="idemail" required maxlength="15" minlength="5" autocomplete="email">
+            </label>
+        </p>
+        <p>
+            <label for="idpass">
+                Senha:
+                <input type="password" name="pass" required id="idpass" autocomplete="current-password">
+            </label>
+        </p>
+        <p>
+            <input type="submit" value="Enviar" class="input">
+            <input type="reset" value="Resetar" class="input">
+        </p>
+    </form>
+</body>
+</html>

@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Estudo de formularios - 4</title>
+    <style>
+        * {
+            margin: 0px;
+            padding: 0px;
+        }
+        h1 {
+            text-align: center;
+        }
+        form {
+            margin: auto;
+            width: 300px;
+        }
+        p {
+            margin: 10px;
+        }
+        input {
+            width: 100%;
+        }
+        .esse {
+            
+            width: 30%;
+        }
+        #isso {
+            margin: 20px 0px 0px 0px;
+            text-align: center;
+        }
+        div {  
+            margin: 20vh auto;
+            padding: 20px;
+            width: 350px;
+            border: 1px solid black;
+            box-shadow: 0px 0px 10px rgba(54, 54, 54, 0.514)
+        }
+    </style>
+</head>
+<body>
+    <!--
+        Novos inputs
+
+        Number: Aceita apenas números como dados, compativel com parametros Min, Max e Step e é inconpativeis com Maxlength e Minlength.
+        Month: Aceita o mês de um determinado ano como dado, compativel com o parametro Value.
+        Date: Aceita datas como dados, compativel com o parametro Value.
+        Time: Aceita hora e minutos como dados, compativel com o paramentro Value.
+        
+        Novos parametros
+
+        Max: Fuciona apenas em inputs relacionados com números e define o valor máximo que pode ser colocado no input.
+        Min: Fuciona apenas em inputs relacionados com números e define o valor mínimo que pode ser colocado no input.
+        Step: Fuciona apenas em inputs relacionados com números e define as casas decimais que ele pode pular.
+        Value: Define o valor do input ( o dado que o usario põe no input ).
+    -->
+    <div>
+        <h1>Teste de Formulario</h1>
+        <form action="" method="get" autocomplete="on">
+            <p>
+                <label for="idnome">
+                    Nome:
+                    <input type="text" name="nome" id="idnome" required maxlength="25" placeholder="Nome Completo" autocomplete="username">
+                </label>
+            </p>
+            <p>
+                <label for="idmedia">
+                    Média
+                    <input type="number" name="media" id="idmedia" placeholder="0 - 10" min="0" step="0.1" max="10" minlength="2" maxlength="1" required autocomplete="off">
+                </label>
+            </p>
+            <p>
+                <label for="idmes">
+                    Mês da Nota Obtida:
+                    <input type="month" name="mes" id="idmes" required value="2024-03">
+                </label>
+            </p>
+            <p>
+                <label for="iddata">
+                    Data de Entrega:
+                    <input type="date" name="data" id="idata" placeholder="0 - 10" required value="2024-03-21">
+                </label>
+            </p>
+            <p>
+                <label for="idtempo">
+                    Data de Entrega:
+                    <input type="time" name="tempo" id="idtempo" required value="00:00">
+                </label>
+            </p>
+            <p id="isso">
+                <input type="submit" value="Enviar" class="esse">
+                <input type="reset" value="Limpar" class="esse">
+            </p>
+        </form>
+    </div>
+</body>
+</html>
