@@ -5,10 +5,51 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Estudos de Formularios - 5</title>
     <style>
-        
+        body {
+            font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+        }
+        legend {
+            font-size: 1.5em;
+            font-weight: bold;
+        }
     </style>
 </head>
 <body>
-    
+    <!--
+        Novos input
+
+        Email: Não permite entrada de dados sem o "@email" no final
+        Tel: Nenhuma mudança aparente mas usado para entrada de dados telefones
+
+        Tecnica aprendida ( Estudar o basico antes de passar para a próxima aula )
+        
+        RegEx: Tecnica que pode ser utilizada para validação, substituições e buscas, entretanto no assunto especifico como FORMULARIOS pode ser usado para especificar como o dado deve estar para que seja permitido a entrada do mesmo.
+
+        Novas tags
+
+        Fieldset: põe uma borda ao redor dos elementos filhos do mesmo.
+        Legend: Põe um texto que pode ser considerado o título do Fieldset caso seja colocado dentro de uma tag Fieldset, caso seja colocado fora aparecera como um texto normal.
+    -->
+    <form action="" autocomplete="off">
+        <fieldset>
+        <legend>E-mail</legend>
+        <p>
+            E-mail:
+            <label for="idemail">  
+            <input type="email" name="email" id="idemail" required>
+        </label>
+        </p>
+        <p>
+            Telefone:
+            <label for="idtel">
+            <input type="tel" name="tel" id="idtel" pattern="" required>
+            </label>
+        </p>
+        <p>
+            <input type="submit" value="Enviar">
+            <input type="reset" value="Resetar">
+        </p>
+        </fieldset>
+    </form>
 </body>
 </html>
