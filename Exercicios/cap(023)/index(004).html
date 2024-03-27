@@ -30,19 +30,19 @@
         Fieldset: põe uma borda ao redor dos elementos filhos do mesmo.
         Legend: Põe um texto que pode ser considerado o título do Fieldset caso seja colocado dentro de uma tag Fieldset, caso seja colocado fora aparecera como um texto normal.
     -->
-    <form action="" autocomplete="off">
+    <form action="" autocomplete="on">
         <fieldset>
         <legend>E-mail</legend>
         <p>
             E-mail:
             <label for="idemail">  
-            <input type="email" name="email" id="idemail" required>
+            <input type="email" name="email" id="idemail" required autocomplete="email">
         </label>
         </p>
         <p>
             Telefone:
             <label for="idtel">
-            <input type="tel" name="tel" id="idtel" pattern="" required>
+            <input type="tel" name="tel" id="idtel" required pattern="" placeholder="XXXX-XXXX">
             </label>
         </p>
         <p>
