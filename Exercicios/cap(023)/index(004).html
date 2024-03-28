@@ -8,9 +8,16 @@
         body {
             font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
         }
+        fieldset {
+            margin: auto;
+            width: 100px;
+        }
         legend {
             font-size: 1.5em;
             font-weight: bold;
+        }
+        #this  {
+            text-align: center;
         }
     </style>
 </head>
@@ -30,7 +37,7 @@
         Fieldset: põe uma borda ao redor dos elementos filhos do mesmo.
         Legend: Põe um texto que pode ser considerado o título do Fieldset caso seja colocado dentro de uma tag Fieldset, caso seja colocado fora aparecera como um texto normal.
     -->
-    <form action="" autocomplete="on">
+    <form action="cadastro.php" autocomplete="on">
         <fieldset>
         <legend>E-mail</legend>
         <p>
@@ -42,10 +49,10 @@
         <p>
             Telefone:
             <label for="idtel">
-            <input type="tel" name="tel" id="idtel" required pattern="" placeholder="XXXX-XXXX">
+            <input type="tel" name="tel" id="idtel" required pattern="/([0-9]{4})[-]([0-9]{4})/g" placeholder="XXXX-XXXX">
             </label>
         </p>
-        <p>
+        <p id="this">
             <input type="submit" value="Enviar">
             <input type="reset" value="Resetar">
         </p>

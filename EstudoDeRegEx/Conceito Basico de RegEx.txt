@@ -5,6 +5,8 @@ Conceitos basicos de RegEx							|
 [25] = seleciona todos os números 2 e 5.					|
 [2][5] = seleciona todos os números que estão numa sequencia de 2 e 5.		|
 [0-5] = selecionar todos os números entre 0 e 5.				|
+										|	
+OBS: Poder ser usado para letras tambem, não apenas para números		|
 										|
 =-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-+
 										|
@@ -28,7 +30,22 @@ Ex:										|
 	    seleção do final da linha.						|
  										|
 =-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-+
-
-
-
+										|
+Usando () voce pode separar suas caracteres selecionados nomeando-os como $1	|
+$2, $3 respectivamente.								|
+										|
+Ex:										|
+										|
+([0-9]{5})([0-9]{5}) = fuciona normalmente mas agora voçe pode seleciona-los	|
+separadamente usando para o primeiro paretese -> $1 <- e para o segundo -> $2 <-|
+e assim por diante.								|
+										|
+OBS: O uso do () é muito usado para fazer modificações e substutuiçõesem textos |
+especificos como data por exemplo.						|
+										|
+=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-+
+										|
+É possivel usar RegEx na prática no VsCode usando Ctrl+F e ativando a opção 	|
+RegEx.										|
+										|
 =-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-+
