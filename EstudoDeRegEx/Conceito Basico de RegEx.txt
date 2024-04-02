@@ -49,3 +49,17 @@ especificos como data por exemplo.						|
 RegEx.										|
 										|
 =-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-+
+										|
+. = selecionar todos os números.						|
+| = pode ser resumido como "OU".						|
+\. = Essa barra faz com que o próximo sinal seja considerado literalmente.	|
+X+ = seleciona o número e mais quantos tiver do mesmo juntamente.		|
+\s = essa \ e s juntos representam um sinal de espaço 				|
+(X)? = irá selecionar apenas caso apareça					|
+X. = seleciona o número "X" e o próximo de acordo com quantos . tiver.		|
+.X = seleciona os números que tiver antes do "X" de acordo com quantos . tiver	|
+     mais o número "X".								|
+X{2, 3} = seleciona o número "X" caso ele se repita 2  ou 3 vezes, ou seja, 	|
+	  nesse caso a , fuciona como um "OU".					|
+										|
+=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-+
