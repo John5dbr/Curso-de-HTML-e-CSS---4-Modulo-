@@ -9,6 +9,49 @@
     </style>
 </head>
 <body>
-    
+    <!--
+        
+    -->
+    <h1>Formularios de Esportes</h1>
+    <form action="cadastro.php" method="get" autocomplete="off">
+        <fieldset>
+            <legend>Esportes Favoritos</legend>
+            <label for="idsport1">
+                <input type="checkbox" name="sport1" id="idsport1">
+                Muay Thai
+            </label><br>
+            <label for="idsport2">
+                <input type="checkbox" name="sport2" id="idsport2">
+                Wrestling
+            </label><br>
+            <label for="idsport3">
+                <input type="checkbox" name="sport3" id="idsport3">
+                JiuTsu
+            </label><br>
+            <label for="idsport4">
+                <input type="checkbox" name="sport4" id="idsport4">
+                Boxe
+            </label><br>
+            <label for="idsport5">
+                <input type="checkbox" name="sport5" id="idsport5">
+                Judo
+            </label><br>
+        </fieldset>
+        <fieldset>
+            <legend>Sexo</legend>
+            <label for="idmacho">
+                <input type="radio" name="sexo" id="idmacho">
+                Masculino
+            </label><br>
+            <label for="idfemea">
+                <input type="radio" name="sexo" id="idfemea">
+                Feminino
+            </label>
+        </fieldset>
+        <p>
+            <input type="submit" value="Enviar">
+            <input type="reset" value="Resetar">
+        </p>
+    </form>
 </body>
 </html>
