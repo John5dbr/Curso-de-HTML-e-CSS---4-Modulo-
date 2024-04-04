@@ -5,12 +5,33 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Estudos de Formularios - 6</title>
     <style>
-        
-    </style>
+        h1 {
+            text-align: center;
+        }
+        form {
+            width: 400px;
+            margin: auto;
+        }
+        #hm {
+            text-align: center;
+        }
+    </style>    
 </head>
 <body>
     <!--
-        
+        Novos inputs
+
+        Checkbox: Botão que possibilita ser marcado pelo usuario, todos os checkbox podem ser marcados juntos ou desmarcados.
+
+        Radio: Botão que possibilita ser marcado pelo usuario porém apenas um pode ser marcado ( apenas quando os input:radio tiverem o mesmo name, caso contrario ele irá apresentar mal fucionamento ) e não podem ser desmarcados.
+
+        Novos Parametros
+
+        Checked: Compativel para os inputs do tipo Radio e Checkbox e etc..., define que aquele input sera automaticamente selecionado quando a pagina carregar
+
+        Observações
+
+        O value no input:radio vai definir como o dado irá aparecer "banco de dados".
     -->
     <h1>Formularios de Esportes</h1>
     <form action="cadastro.php" method="get" autocomplete="off">
@@ -40,15 +61,19 @@
         <fieldset>
             <legend>Sexo</legend>
             <label for="idmacho">
-                <input type="radio" name="sexo" id="idmacho">
+                <input type="radio" name="sexo" id="idmacho" value="Homem" >
                 Masculino
             </label><br>
             <label for="idfemea">
-                <input type="radio" name="sexo" id="idfemea">
+                <input type="radio" name="sexo" id="idfemea" value="Mulher" >
                 Feminino
+            </label><br>
+            <label for="idpni"> 
+                <input type="radio" name="sexo" id="idpni" value="Gay" checked >
+                Prefiro não informar
             </label>
         </fieldset>
-        <p>
+        <p id="hm">
             <input type="submit" value="Enviar">
             <input type="reset" value="Resetar">
         </p>
